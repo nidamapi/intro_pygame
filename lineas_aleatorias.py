@@ -52,5 +52,4 @@ while True:
 
         pygame.draw.line(ventana, color_aleatorio,(loco1, loco2), (loco3, loco4))
     
-
     pygame.display.flip()

@@ -140,7 +140,7 @@ for event in pygame.even.get():
             PARAR_JUEGO = True
 
 ```
-#### FUnciòn pygame.event.wait
+#### Funciòn pygame.event.wait
 - Està funciòn espera a que ocurra un evento, y en cuanto sucede està disponible.
 
 ```Python
@@ -151,3 +151,28 @@ while True:
 ```
 #### Funciòn pygame.event.poll
 - Devuelve solo uno de los eventos que estàn en la cola de espera.
+
+
+## Sonidos en Pygame
+- pygame.mixer: mòdulo que permite la gestiòn del sonido.
+- music: submòdulo que gestiona la mùsica de fondo.Necesariamente solo hay uno a la vez.
+- Sound: objeto de mixer, que se puede instanciar varias veces para usarlo en los efectos de sonido del juego.
+
+### Archivos de sonido
+- Se recomienda usar dos formatos, principalmente:
+    - Formato WAW (Waverform Audio File Format)
+    - Formato abierto y gratuito OGG
+
+### Channe (canal) en Pygame
+- Un juego tiene varios canales de sonido. 
+- Se puede asignar un sonido al canal nùmero 1 y otro diferente al nùmero 2.
+- Entonces es posible reproducir sonidos simultàneamente activando la lectura en diferentes canales.
+
+## Sprites
+- Objeto que asocia una ubicaciòn, una representaciòn gràfica (esta  aquella imàgen, por ejemplo) y un conjunto de propiedades.
+- Estas propiedades pueden ser un nombre, un texto, valores booleanos que caracterizan el objeto en cuestiòn (por ejemplo si el objeto se puede mover o no)
+- Una posible traducciòn del tèrmino sprite podrìa ser "imagen-objeto" que se actualiza con cada iteraciòn del bucle del juego.
+- Cuanto mas complejo es el juego, màs objetos gràficos tiene que gestionar y actualizar, lo que puede ser tedioso.
+- Pygame usa no solo la nociòn de sprite, sino la nociòn de grupo de sprites (group)
+- La nociòn de group permite agrupar los objetos del mismo tipo. Ejemplo: todos los soldados de un ejercito, lo que se entiende como una colecciòn de instancias de una clase Soldado.
+- Un determinado procesamiento se puede aplicar a un conjunto o subconjunto de sprites. Ejemplo: cambiar el color de todos los enemigos o hacer invisibles algunos objetos.

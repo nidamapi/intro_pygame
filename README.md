@@ -176,3 +176,26 @@ while True:
 - Pygame usa no solo la nociòn de sprite, sino la nociòn de grupo de sprites (group)
 - La nociòn de group permite agrupar los objetos del mismo tipo. Ejemplo: todos los soldados de un ejercito, lo que se entiende como una colecciòn de instancias de una clase Soldado.
 - Un determinado procesamiento se puede aplicar a un conjunto o subconjunto de sprites. Ejemplo: cambiar el color de todos los enemigos o hacer invisibles algunos objetos.
+
+
+## Group
+- La clase Group de Pygame se utiliza para manejar y organizar múltiples sprites (objetos gráficos) en un solo grupo.
+### Clase Group en Pygame
+- Agrupación de Sprites: Permite agrupar múltiples sprites del mismo tipo para gestionarlos juntos (por ejemplo, todos los enemigos o todos los proyectiles).
+- Procesamiento Colectivo: Puedes aplicar operaciones como actualizar, dibujar o cambiar propiedades a todos los sprites dentro del grupo con una sola línea de código.
+- Eficiencia: Facilita la gestión de muchos objetos gráficos, evitando tener que tratar con cada sprite individualmente.
+
+### Métodos Clave:
+
+- add(sprite): Añadir un sprite al grupo.
+- update(): Actualizar todos los sprites en el grupo.
+- draw(surface): Dibujar todos los sprites sobre una superficie.
+- remove(sprite): Eliminar un sprite del grupo.
+
+### Ejemplo de uso:
+ Un ejército de enemigos puede ser representado como un solo grupo, permitiendo aplicarles cambios o actualizaciones de forma colectiva (por ejemplo, moverlos o hacerlos invisibles).
+
+
+
+
+
